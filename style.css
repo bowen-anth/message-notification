@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f5f6ff;
+}
+
+.bell {
+  background-color: #0c0f42;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  border-radius: 50%;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.bell-image {
+  margin: auto;
+  width: 32px;
+  height: auto;
+}
+
+.card {
+  background-color: white;
+  position: relative;
+  margin: 3em auto;
+  width: 96%;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgb(147, 146, 146);
+  padding: 1em;
+  padding-bottom: 0.15em;
+  max-width: 575px;
+}
+
+.blue {
+  background-color: #e9eaff;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  display: none;
+}
+
+.title-p {
+  font-weight: bold;
+}
+
+.message-item-container {
+  display: flex;
+  gap: 1em;
+  margin: 1em auto;
+}
+
+.left {
+  background-color: #feeaf4;
+  padding: 0.75em;
+  height: 50%;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  margin: 0.5em 0;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.message-summary-p {
+  margin: 0.25em 0;
+}
+
+.button-container {
+  margin-top: 2em;
+  display: flex;
+}
+
+.button {
+  height: 2.25rem;
+  width: 46%;
+  background-color: white;
+  border-radius: 16px;
+  margin: 0 auto;
+  margin: 0 0.25em;
+  cursor: pointer;
+}
+
+.twitter {
+  border: 1px solid #81cee9;
+  background-color: #81cee9;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.facebook {
+  border: 1px solid #3f73b2;
+  background-color: #3f73b2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.footer {
+  padding: 0.5em;
+}
+
+.twitter-logo,
+.facebook-logo {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .blue {
+    display: block;
+    top: -15%;
+    left: -5%;
+    height: 75%;
+    width: 102%;
+    z-index: -1;
+    border-radius: 16px;
+  }
+  .card {
+    margin: 10em auto;
+    margin-bottom: 3em;
+  }
+  .twitter-logo,
+  .facebook-logo {
+    display: inline-block;
+  }
+}
